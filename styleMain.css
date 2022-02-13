@@ -1,0 +1,123 @@
+.fas, .far{
+    font-size: 2rem;
+}
+
+.toolbar{
+    border: 1px solid red;
+    width: 80vw;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* trick - to bring element in centre */
+    margin: 0 auto;
+}
+
+.tool-img {
+    /* img ko change to usko height */
+    height: 50px;
+}
+.color-container{
+    /* border: 1px solid gray; */
+    height: 50px;
+    width: 200px;
+    
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.color{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 2px;
+
+}
+.red{
+    background-color: lightcoral;
+}
+.green{
+    background-color: lightgreen;
+}
+.blue{
+    background-color: lightblue;
+}
+.black{
+    background-color: black;
+    
+}
+.size-bar{
+    width: 150px;
+    height: 30px;
+    border: 1px solid blue;
+
+    /* default display is none */
+    /* onclick we've to show the size options, display: flex; */
+    /* display: flex; */
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.size{
+    border-radius: 50%;
+    background-color: teal;
+}
+.size1{
+    height: 10px;
+    width: 10px;
+}
+.size2{
+    height: 15px;
+    width: 15px;
+}
+.size3{
+    height: 20px;
+    width: 20px;
+}
+
+/* sticky notes */
+
+        /* div -> parent width  */
+        .navbar {
+            display: flex;
+            height: 24px;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: transparent;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    
+        .close {
+            height: 15px;
+            width: 15px;
+            background-color: lightcoral;
+            border-radius: 50%;
+            margin-right: 5px;
+            ;
+        }
+    
+        .minimize {
+            height: 15px;
+            width: 15px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            margin-right: 5px;
+            ;
+        }
+    
+        .sticky {
+            width: 175px;
+            height: 175px;
+        }
+    
+        .textarea {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            height: 145px;
+            width: 170px;
+            outline: none;
+            border: none;
+            border-top: 2px solid gray
+        }

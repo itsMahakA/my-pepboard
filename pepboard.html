@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styleMain.css">
+   
+</head>
+<body>
+    <div class="toolbar">
+        <!-- pencil -->
+        <div class="tool" id="pencil">
+            <img src="NewIcons/Black_Pencil.svg" alt="pencil" class="tool-img" >
+            <!-- size for pencil -->
+            <div class="size-bar">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+            </div>
+        </div>
+        <!-- eraser -->
+        <div class="tool" id="eraser">
+            <img src="NewIcons/Eraser.svg" alt="eraser" class="tool-img" >
+            <!-- size for eraser -->
+            <div class="size-bar">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+            </div>
+        </div>
+        <!-- line -->
+        <div class="tool" id="line">
+            <i class="fas fa-slash"> </i>
+            <div class="size-bar">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+            </div>
+        </div>
+        <!-- rectangle -->
+        <div class="tool" id="rect">
+            <i class="far fa-square"></i>
+            <div class="size-bar">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+            </div>
+        </div>
+        <!-- Sticky notes -->
+        <div class="tool" id="sticky">
+            <img src="./NewIcons/StickyNote.svg" alt="" class="tool-img">
+        </div>
+        <!-- all colors as single unit -->
+        <div class="color-container">
+            <div class ="color red"></div>
+            <div class= "color green"></div>
+            <div class= "color blue"></div>
+            <div class="color black"></div>
+        </div>
+    </div>
+
+    <canvas></canvas>
+</body>
+
+<!-- variable declare -->
+<script src="setup.js"></script>
+
+<!-- pencil, rectangle, line -->
+<script src="draw.js"></script>
+<!-- logic for TOOL CHANGE -->
+<script src="toolManipulation.js"></script>
+<!-- sticky notes -->
+<script src="sticky.js"></script>
+</html>
